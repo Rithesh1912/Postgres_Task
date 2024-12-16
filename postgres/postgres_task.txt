@@ -1,0 +1,63 @@
+1)greater than
+
+select * from customer where address_id >8;
+
+2)less than 
+
+select * from customer where address_id < 8;
+
+3)greater than or equal to
+
+select * from customer where address_id >= 8;
+
+4)less than or equal to
+
+select * from customer where address_id <= 9;
+
+5) not equal to 
+
+select * from customer where store_id != 1;
+
+6) equal to 
+
+select * from customer where store_id=1;
+
+7) NOT
+
+select * from customer where NOT address_id >90;
+
+8) OR
+
+select * from customer where store_id =1 OR address_id >90;
+
+9) IN 
+
+select * from customer where customer_id IN (1,2,3);
+
+10) NOT IN
+
+select * from customer where customer_id NOT IN (1,2,3);
+
+11) BETWEEN
+select * from customer where customer_id BETWEEN 1 AND 100;
+
+12) NOT BETWEEN
+select * from customer where customer_id NOT BETWEEN 1 AND 400;
+
+13) LIKE
+select * from customer where first_name LIKE 'A%';
+
+14) NOT LIKE
+select * from customer where first_name NOT LIKE 'A%';
+
+15) IS NULL
+select * from customer where first_name IS NULL;
+
+16) IS NOT NULL
+select * from customer where first_name IS NOT NULL;
+
+17) lIMIT
+select * from customer  LIMIT 10;
+
+18) OFFSET
+select * from customer order by first_name offset 5;
